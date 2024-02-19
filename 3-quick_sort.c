@@ -21,7 +21,7 @@ void swap_ints(int *a, int *b)
  * @left: The starting index of the subset
  * @right: The ending index of the subset
  *
- * Returns: The final position of the pivot element
+ * Return: The final poisition of the pivot element
  */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
@@ -47,7 +47,7 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 		print_array(array, size);
 	}
 
-	return above;
+	return (above);
 }
 
 /**
@@ -79,7 +79,7 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
-		return;
+		return ();
 
 	lomuto_sort(array, size, 0, size - 1);
 }
